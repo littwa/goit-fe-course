@@ -1,0 +1,110 @@
+
+*{
+    outline: red solid 1px;
+}
+body{
+    margin: 0px 150px 0px 150px;
+    font-family: "Playfair Display", "Ubuntu", "sans-serif";
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    line-height: 24px;
+}
+.nav-list{
+    text-align: center;
+    margin: 0px;
+    padding: 100px;
+    padding-left: 0px;
+    padding-right: 150px;
+    border: 0px solid #ffffff;
+    background-color: #ffffff;;
+    list-style: none;
+}
+.nav-list li{
+    text-align: center;
+    display: inline; 
+    margin-right: 0px; 
+    border: 0px solid #000; 
+    padding:50px; 
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.nav-lifestyle{
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color:rgb(3, 169, 244);
+    font-style: normal;
+    text-decoration: none;
+}
+.nav-page-header{
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color:rgb(98, 98, 98);
+    font-style: normal;
+    text-decoration: none;
+}
+.article-1{
+    display: inline-block;
+    width: 419px;
+    margin: 0px 60px 130px 0px;
+}
+.article-2{
+    display: inline-block;
+    width: 419px;
+    margin: 0px 60px 130px 0px;
+}
+.article-3{
+    display: inline-block;
+    width: 419px;
+    margin: 0px 60px 55px 0px;
+}
+.item-nav{
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color:rgb(180, 173, 158);
+}
+.wrapper h2{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: normal;
+    color:rgb(98, 98, 98);
+}
+.section-about{
+    font-family: "Playfair Display";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: none;
+    color:rgb(98, 98, 98);
+}
+.button-load-more{
+    display: block;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: none;
+    color:rgb(98, 98, 98);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(98, 98, 98);
+    border-style: solid;
+    border-width: 1px;
+    padding: 16px;
+    margin: auto;
+    margin-left: 390px;
+    
+}
+footer{
+    padding: 35px;
+}
+button:hover{
+    background-color:rgb(3, 169, 244);
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    background-color: rgb(3, 169, 244);
+    color:rgb(0, 0, 0);
+}
