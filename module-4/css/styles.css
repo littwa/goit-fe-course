@@ -7,16 +7,61 @@ body{
 .container{
     width: 1110px;
     margin: auto 245px;
+    height: auto;
+    overflow: hidden;
 }
 h1{
     font-family: "Roboto";
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 400;
+    float: left;
+    width: 95px;
+    margin: 0;
+    padding: 0;
+}
+h1::first-letter{
+    color: #1abc9c;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 900;
 }
 nav ul li a{
     text-transform: uppercase;
     text-decoration: none;
-    
+    color: #0f0101;
 }
-.nav-list{
+.nav-list li{
     list-style-type: none;
-    
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: 900;
+    width: 95px;
+    float: right;
+}
+a:hover{
+    color: #1abc9c;
+}
+.nav-clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.featured{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 48px;
+    line-height: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 100px auto;
+}
+.featured::after{
+    display: block;
+    margin: 30px auto;
+    content: "";
+    width: 160px;
+    height: 10px;
+    background: #1abc9c;
 }
