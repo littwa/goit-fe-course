@@ -1,0 +1,22 @@
+body{
+    font-family: "Open Sans", "Roboto", "sans-serif";
+    color: #515151;
+    font-size: 14px;
+    line-height: 24px;
+}
+.container{
+    width: 1110px;
+    margin: auto 245px;
+}
+h1{
+    font-family: "Roboto";
+}
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+.nav-list{
+    list-style-type: none;
+    
+}
