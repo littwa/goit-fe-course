@@ -5,7 +5,8 @@ body{
     line-height: 24px;
 }
 header{
-    margin-bottom: 150px;
+    padding-top: 35px;
+    margin-bottom: 90px;
 }
 .container{
     width: 1110px;
@@ -21,20 +22,26 @@ h1 a{
     text-decoration: none;
     color: #515151;
     font-weight: 400;
-    float: left;
-    width: 95px;
     margin: 0;
     padding: 0;
 }
-h1 a::first-letter{
+h1{
+    float: left;
+    margin: 0px;
+}
+h1::first-letter{
     color: #1abc9c;
     font-size: 30px;
     line-height: 32px;
     font-weight: 900;
 }
+nav ul{
+    margin: 0;
+    padding: 0;
+}
 .nav-list{
     float: right;
-    line-height: 11px;
+    line-height: 32px;
 }
 .nav-list a{
     text-transform: uppercase;
@@ -47,8 +54,11 @@ h1 a::first-letter{
 .nav-list li{
     list-style-type: none;
     text-align: center;
-    width: 92px;
     float: left;
+    margin-right: 25px;
+}
+.nav-list li:last-child{
+    margin-right: 0;
 }
 a:hover{
     color: #1abc9c;
@@ -60,7 +70,7 @@ a:hover{
     line-height: 32px;
     font-weight: 900;
     text-transform: uppercase;
-    margin: 90px auto 90px auto;
+    margin: 0 auto 90px auto;
 }
 .featured::after{
     display: block;
@@ -72,7 +82,7 @@ a:hover{
 }
 section ul{
     font-size: 0;
-    margin: 0;
+    margin: 0 0 75px 0;
     padding: 0;
 }
 .item{
@@ -146,7 +156,6 @@ section ul{
     height: 5px;
     background: #1abc9c;
     margin-top: 10px;
-    margin-bottom: 27px;
 }
 .start-text{
     font-family: "Open Sans";
@@ -155,23 +164,22 @@ section ul{
     color: #555252;
     margin: 0;
 }
-button{
+.blog a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
     width: 160px;
     height: 50px;
     background: #1abc9c;
     margin: 15px 0;
     font-family: "Open Sans";
     font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
+    font-weight: 300;
+    line-height: 50px;
     color: #ffffff;
     border: none;
     border-radius: 3px;
 }
-button:hover{
+.blog a:hover{
     background-color: #3cccaf;
 }
-main{
-    padding-bottom: 70px;
-}
-
