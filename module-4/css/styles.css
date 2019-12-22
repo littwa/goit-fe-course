@@ -90,7 +90,6 @@ section ul{
     display: inline-block;
     height: 40px;
     margin: 0;
-    background: #323232;
     font-family: "Roboto";
     font-size: 18px;
     line-height: 40px;
@@ -102,10 +101,12 @@ section ul{
     float: left;
     width: 200px;
     text-transform: uppercase;
+    background: #323232;
 }
 .price{
     float: right;
     width: 55px;
+    background: #8c8c8c;
 }
 .item:nth-child(4n){
     margin-right: 0;
