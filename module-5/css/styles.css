@@ -1,11 +1,9 @@
-*{
-    outline: solid red 1px;
-}
 body{
     font-family: "Open Sans", "Roboto", "sans-serif";
     color: #515151;
     font-size: 14px;
     line-height: 24px;
+    text-align: center;
 }
 .wraper{
     width: 100vw;
@@ -14,7 +12,7 @@ body{
 header{
     width: 1110px;
     margin: 0 auto;
-    padding-top: 35px;
+    padding: 40px 0;
     height: auto;
     overflow: hidden;
 }
@@ -72,7 +70,6 @@ a:hover{
     display: table;
     clear: both;
 }
-/* СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР */
 .slider{
     position: relative;
     display: inline-block;
@@ -85,20 +82,18 @@ a:hover{
 .slider li{
     list-style-type: none;
     width: auto;
-    height: auto;
     margin: 0;
     padding: 0;
 }
 .slider img{
     width: auto;
-    height: auto;
     opacity: 0.5;
     padding: 0;
     margin: 0;
 }
 .h2-slider{
     position: absolute;
-    top: 195px;
+    top: 210px;
     left: 435px;
     color: #ffffff;
     font-weight: 700;
@@ -144,7 +139,6 @@ a:hover{
 main ul button:hover{
     opacity: 0.5;
 }
-/* СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР  СЛАЙДЕР */
 section {
     background-color:#e9f0fd;
 }
@@ -152,14 +146,14 @@ section {
     text-align: center;
     font-family: "Roboto";
     font-size: 48px;
-    line-height: 32px;
+    line-height: 48px;
     font-weight: 900;
     text-transform: uppercase;
     margin: 0 auto 90px auto;
+    padding-top: 100px;
 }
 h3 section{
     font-size: 48px;
-    
 }
 .new-col-h3::after{
     display: block;
@@ -169,21 +163,7 @@ h3 section{
     height: 10px;
     background: #1abc9c;
 }
-.item{
-    display: inline-block;
-    width: 255px;
-    height: 322px;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    font-size: 0; 
-}
-li img{
-    display: block;
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
+
 .name{
     display: inline-block;
     width: 200px;
@@ -198,6 +178,7 @@ li img{
     line-height: 40px;
     color: #ffffff;
     font-weight: 900;
+    text-align: left;
     text-indent: 10px
 }
 .price{
@@ -214,15 +195,105 @@ li img{
     line-height: 40px;
     color: #ffffff;
     font-weight: 900;
-    text-indent: 10px
+    text-align: center;
 }
 .item:not(:nth-last-child(-n+1)) {
     margin: 0 26px 100px 0;
 }
-section>ul{
-    text-align: center;
+.item{
+    position: relative;
+    display: inline-block;
+    width: 255px;
+    height: 322px;
     padding: 0;
     margin: 0;
+    border: 0;
+    font-size: 0; 
+}
+.item img{
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 0; 
+    width: 255px;
+    height: 282px;
+}
+
+.overlay{
+    display: none;
+    position: absolute;
+    width: 235px;
+    height: 260px;
+    background: rgba(0, 0, 0, 0.5);
+    top: 10px;
+    left: 10px;
+}
+.overlay ul{
+    display: inline-block;
+    padding: 71px 0;
+    list-style: none;    
+}
+.overlay li{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 7px 7px 0; 
+    border: solid 1px #ffffff;
+    vertical-align: middle;
+}
+.overlay .cart{
+    display: inline-block;
+    height: 50px;
+    width: 170px;
+    border: solid 1px #ffffff;
+    margin: 0 7px 0 0; 
+    font-size: 14px;
+    font-family: "Open Sans";
+    text-align: start;
+    background: #323232;
+    color: #ffffff;
+    line-height: 50px;
+}
+.cart p{
+    display: inline-block;
+    height: 50px;
+    width: 90px;
+    margin: 0px;
+    padding: 0 0 0 15px;
+    line-height: 50px;
+}
+.overlay li:hover{
+    background: #1abc9c;
+}
+.cart div{
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+}
+.overlay img{
+    height: 50px;
+    width: 50px;
+}
+.cart img{
+    display: inline-block;
+    margin: 0px;
+    height: 50px;
+    width: 50px;
+}
+
+.item a:hover .price{
+    background: #7fd9c7;
+}
+.item a:hover .name{
+    background: #1abc9c;
+}
+.item a:hover img{
+   opacity: 0.5;
+}
+.item a:hover .overlay{
+    display: inline-block;
 }
 footer{
     background-color: #323232;
