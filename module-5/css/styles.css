@@ -8,6 +8,8 @@ body{
 .wraper{
     width: 100vw;
     margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
 }
 header{
     width: 1110px;
@@ -50,6 +52,7 @@ nav ul{
     text-decoration: none;
     color: #0f0101;
     line-height: 11px;
+    font-size: 14px;
     font-family: "Open Sans";
     font-weight: 900;
 }
@@ -84,8 +87,10 @@ a:hover{
     width: auto;
     margin: 0;
     padding: 0;
+
 }
 .slider img{
+    display: inline-block;
     width: auto;
     opacity: 0.5;
     padding: 0;
