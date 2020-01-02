@@ -141,9 +141,11 @@ a:hover{
     border: none;
     background-image: url(../img/arrow-right.png);
 }
-main ul button:hover{
+.left:hover, 
+.right:hover{
     opacity: 0.5;
 }
+
 section {
     background-color:#e9f0fd;
 }
@@ -172,7 +174,6 @@ h3 + ul{
     height: 10px;
     background: #1abc9c;
 }
-
 .name{
     display: inline-block;
     width: 200px;
@@ -228,7 +229,6 @@ h3 + ul{
     width: 255px;
     height: 282px;
 }
-
 .overlay{
     display: none;
     position: absolute;
@@ -249,49 +249,54 @@ h3 + ul{
     width: 50px;
     margin: 0 7px 7px 0; 
     border: solid 1px #ffffff;
-    vertical-align: middle;
+}
+.overlay li:nth-child(4){
+    height: 50px;
+    width: 170px;
+}
+.love{
+    background: url(../img/love.png);
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+.share{
+    background: url(../img/share.png);
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+.overlay .clock{
+    background: url(../img/clock.png);
+    height: 50px;
+    width: 50px;
+    border: none;
 }
 .overlay .cart{
     display: inline-block;
     height: 50px;
     width: 170px;
-    border: solid 1px #ffffff;
+    border: none;
     margin: 0 7px 0 0; 
     font-size: 14px;
     font-family: "Open Sans";
-    text-align: start;
-    background: #323232;
+    background: url(../img/cart.png) #323232;
+    background-repeat: no-repeat;
     color: #ffffff;
     line-height: 50px;
 }
-.cart p{
-    display: inline-block;
-    height: 50px;
-    width: 90px;
-    margin: 0px;
-    padding: 0 0 0 15px;
-    line-height: 50px;
+.cart::after{
+    content: 'ADD TO CART';
+    padding-left: 30px;
 }
 .overlay li:hover{
     background: #1abc9c;
+    border: solid 1px #1abc9c;
 }
-.cart div{
-    display: inline-block;
-    vertical-align: middle;
-    height: 50px;
-    width: 50px;
+.cart:hover{
+    background: url(../img/cart.png) #1abc9c;
+    background-repeat: no-repeat;
 }
-.overlay img{
-    height: 50px;
-    width: 50px;
-}
-.cart img{
-    display: inline-block;
-    margin: 0px;
-    height: 50px;
-    width: 50px;
-}
-
 .item a:hover .price{
     background: #7fd9c7;
 }
@@ -304,6 +309,10 @@ h3 + ul{
 .item a:hover .overlay{
     display: inline-block;
 }
+button{
+    cursor: pointer;
+}
+
 footer{
     background-color: #323232;
     height: 90px;
