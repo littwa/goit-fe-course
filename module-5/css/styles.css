@@ -73,7 +73,7 @@ a:hover{
     display: table;
     clear: both;
 }
-.slider{
+.conteiner-slider{
     position: relative;
     display: inline-block;
     width: auto;
@@ -89,7 +89,7 @@ a:hover{
     padding: 0;
 
 }
-.slider img{
+.conteiner-slider img{
     display: inline-block;
     width: auto;
     opacity: 0.5;
@@ -292,28 +292,35 @@ h3 + ul{
 .overlay li:hover{
     background: #1abc9c;
     border: solid 1px #1abc9c;
+    
 }
 .cart:hover{
     background: url(../img/cart.png) #1abc9c;
     background-repeat: no-repeat;
 }
-.item a:hover .price{
+.item:hover .price{
     background: #7fd9c7;
+    
 }
-.item a:hover .name{
+.item:hover .name{
     background: #1abc9c;
 }
-.item a:hover img{
+.item:hover img{
    opacity: 0.5;
+   
 }
-.item a:hover .overlay{
+.item:hover .overlay{
     display: inline-block;
 }
+.item:hover{
+    cursor: pointer;    
+}  
+
 button{
     cursor: pointer;
 }
 
-footer{
+.conteiner-footer{
     background-color: #323232;
     height: 90px;
     width: 100%;

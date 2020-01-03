@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="author" content="Yurii Litovchenko">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="css\normalize.css">
-        <link rel="stylesheet" href="css\styles.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Roboto:400,400i,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
         <title>homework-05</title>
     </head>
@@ -39,34 +39,35 @@
                     </nav>
             </header>
             <main>
-               <ul class="slider">
-                   <img src="./img/slider.jpg" alt="pic">
-                   <li>
-                        <h2 class="h2-slider">AFFORDABLE PARIS TOURS</h2>
-                        <p class="description">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-                    </li>
-                   
-                   <button class="left">
-                    </button>
-                   <button class="right">
-                    </button>
-               </ul>
-               <section>
-                   <div>
+                <div class="conteiner-slider">
+                        <img src="./img/slider.jpg" alt="pic">
+                        <ul class="slider">   
+                                <li>
+                                     <h2 class="h2-slider">AFFORDABLE PARIS TOURS</h2>
+                                     <p class="description">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
+                                 </li>
+                        </ul>                                                          
+                        <button class="left">
+                        </button>
+                        <button class="right">
+                        </button>
+                </div>             
+                <section>
+                   <div class="conteiner">
                         <h3 class="new-col-h3">
                                 NEW COLLECTION
                         </h3>
                         <ul>
                             <li class="item">
-                                <a href="#">
-                                <img src="../module-5/img/item1.jpg" alt="pic">
-                                <div class="name">
-                                    Blue Tshirt
-                                </div>
-                                <div class="price">
-                                    $26
-                                </div>
-
+                                <a href="#">                               
+                                    <img src="../module-5/img/item1.jpg" alt="pic">
+                                    <div class="name">
+                                     Blue Tshirt
+                                    </div>
+                                    <div class="price">
+                                     $26
+                                    </div>
+                                </a>
                                 <div class="overlay">
                                         <ul>
                                                 <li>
@@ -90,8 +91,7 @@
                                                     </button>                                                 
                                                 </li>
                                         </ul>
-                                </div>
-                            </a>
+                                </div>                            
                             </li>
                             <li class="item">
                                 <a href="#">
@@ -102,7 +102,7 @@
                                     <div class="price">
                                          $31
                                     </div>
-
+                                </a>
                                     <div class="overlay">
                                             <ul>
                                                 <li>
@@ -127,7 +127,6 @@
                                                 </li>
                                             </ul>
                                     </div>
-                                </a>
                             </li>
                             <li class="item">
                                 <a href="#">
@@ -138,7 +137,7 @@
                                     <div class="price">
                                         $21
                                     </div>
-
+                                </a>
                                     <div class="overlay">
                                             <ul>
                                                     <li>
@@ -163,7 +162,6 @@
                                                     </li>
                                             </ul>
                                     </div>
-                                </a>
                             </li>
                             <li class="item">
                                 <a href="#">
@@ -174,7 +172,7 @@
                                     <div class="price">
                                         $56
                                     </div>
-
+                                </a>
                                     <div class="overlay">
                                             <ul>
                                                     <li>
@@ -199,15 +197,15 @@
                                                     </li>
                                             </ul>
                                     </div>
-                                </a>
                             </li>
                         </ul>
                    </div>
-                   
                </section>
             </main>
             <footer>
-                All Rights Reserved © Dokan | Designed <span>ThemenGraph</span>
+                <div class="conteiner-footer">
+                    All Rights Reserved © Dokan | Designed <span>ThemenGraph</span>
+                </div>              
             </footer>            
         </div>
     </body>
