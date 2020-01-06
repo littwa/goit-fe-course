@@ -1,0 +1,315 @@
+body{
+    font-family: "Roboto", "Montserrat", "Kaushan Script", "sans-serif";
+    font-size: 14px;
+    color: #95e1d3 #eaffd0 #fce38a #f38181
+}
+.wraper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 25px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    width: 490px;
+    justify-content: space-between;    
+}
+.navigation a{
+    color: #95e1d3;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+.logo{
+    text-decoration: none;
+    color: #95e1d3;
+    font-family: "Montserrat";
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.navigation li{
+    position: relative;
+    cursor: pointer;   
+}
+.navigation a:hover{
+    color: #f38181;  
+}
+.navigation a::after{
+    content: "";
+    width: 55px;
+    height: 3px;
+    display: block;
+    margin: 12px auto;
+    position: absolute;
+    transition: 0.2s linear;
+}
+.navigation a:hover::after{
+    background: #f38181;
+}
+.services{
+    width: 1200px;
+    margin: 0 auto;
+}
+.h2-services{
+    height: 112px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-family:"Montserrat", "sans-serif";
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 90px 0 40px;
+}
+.services .h2-services::before{
+    display: block;
+    content: "We work with";
+    font-family: "Kaushan Script", "sans-serif";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.h2-services::after{
+    display: block;
+    content: "";
+    background: #f38181;
+    height: 3px;
+    width: 60px;
+    line-height: 24px;
+    margin: 35px auto 0;
+}
+.amazimg-list a{
+    text-decoration: none;
+    display: flex;
+    width: 400px;
+}
+.amazimg-list li:nth-child(-n+3){
+    margin-bottom: 100px;
+}
+.amazimg-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 24px 0 0 0 ;
+    margin: 0;
+}
+.amazimg-list h3{
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #333333;
+}
+.amazimg-list p{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #333333;
+    line-height: 24px;
+}
+.amazimg-list img{
+    width: 32px;
+    height: 32px;
+    padding: 0 30px;
+}
+.team .h2-services::before{
+    display: block;
+    content: "Who we are";
+    font-family: "Kaushan Script", "sans-serif";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.team-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.team p{
+    padding: 0 128px 90px;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    margin: 0;
+}
+.team-list>li{
+    width: 380px;
+    background-color:#95e1d3;
+}
+.team-list h4{
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0 15px;
+    background-color:#ffffff;
+}
+.team-list p{
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    
+    padding: 0 0 70px 0;
+    background-color:#ffffff;
+}
+.foto-item-1{
+    background: url(../img/item1.jpg);
+}
+.foto-item-2{
+    background: url(../img/item2.jpg);
+}
+.foto-item-3{
+    background: url(../img/item3.jpg);
+}
+.foto{
+    position: relative;
+    width: 380px;
+    height: 470px;
+    transition: 0.2s linear;
+}
+.list-social{
+    visibility: hidden;
+    position: absolute;
+    top: 205px;
+    left: 80px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 223px;
+    height: 55px;
+    margin: 0 auto;
+}
+.facebook{
+    background: url(../img/facebook.png) center no-repeat #fce38a;
+    display: block;
+    border: none;
+    width: 55px;
+    height: 55px;
+    transition: 0.2s linear;
+}
+.twitter{
+    background: url(../img/twitter.png) center no-repeat #fce38a;
+    display: block;
+    border: none;
+    width: 55px;
+    height: 55px;
+    transition: 0.2s linear;
+}
+.pinterest{
+    background: url(../img/pinterest.png) center no-repeat #fce38a;
+    display: block;
+    border: none;
+    width: 55px;
+    height: 55px;
+    transition: 0.2s linear;
+}
+.instagram{
+    background: url(../img/instagram.png) center no-repeat #fce38a;
+    display: block;
+    border: none;
+    width: 55px;
+    height: 55px;
+    transition: 0.2s linear;
+}
+.facebook:hover,
+.twitter:hover,
+.pinterest:hover,
+.instagram:hover{
+    background-color: #95e1d3;
+    cursor: pointer;
+}
+.team-list>li:hover .list-social{
+    visibility: visible;
+}
+.team-list>li:hover .foto{
+    transform: translate(-10px, -10px);
+}
+.team-list>li:hover .foto::after{
+    display: block;
+    content: "";
+    background-image: linear-gradient(rgb(243, 129, 129, 0.9), rgb(252, 227, 138, 0.9));
+    width: 380px;
+    height: 470px;
+}
+.team-list>li:hover{
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    border-top: #e7e7e7 solid 1px;
+}
+footer p{
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 14px;
+    color: #333333;
+}
+span{
+    color: #f38181;
+}
+.search{
+    display: flex;
+}
+.search button{
+    border: none;
+    padding: 0;
+}
+.search button:active input[type="submit"]{
+    background: #f38181;
+}
+.search button:hover input[type="submit"]{
+    cursor: pointer;
+}
+input{
+    margin: 0;
+    padding: 0;
+    border: #e7e7e7 solid 1px; 
+}
+input[type="submit"]{
+    width: 150px;
+    height: 40px;
+    background: #95e1d3;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+input[type="search"]{
+    width: 230px;
+    height: 40px;
+    border: #e7e7e7 solid 1px; 
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+}
