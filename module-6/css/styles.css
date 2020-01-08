@@ -278,21 +278,14 @@ span{
 }
 .search{
     display: flex;
-}
-.search button{
-    border: none;
     padding: 0;
+    border: #e7e7e7 solid 1px;
 }
-.search button:active input[type="submit"]{
+input[type="submit"]:active{
     background: #f38181;
 }
-.search button:hover input[type="submit"]{
+input[type="submit"]:hover{
     cursor: pointer;
-}
-input{
-    margin: 0;
-    padding: 0;
-    border: #e7e7e7 solid 1px; 
 }
 input[type="submit"]{
     width: 150px;
@@ -303,13 +296,14 @@ input[type="submit"]{
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
+    border: none;
 }
 input[type="search"]{
     width: 230px;
     height: 40px;
-    border: #e7e7e7 solid 1px; 
     font-family: "Roboto";
     font-size: 15px;
     font-weight: lighter;
     font-style: italic;
+    border: none;
 }
