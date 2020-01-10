@@ -62,19 +62,19 @@ body{
 .services{
     width: 1200px;
     margin: 0 auto;
+    padding-top: 125px;
 }
 .h2-services{
-    height: 112px;
     display: block;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 64px;
     font-family:"Montserrat", "sans-serif";
     font-weight: bold;
     font-size: 30px;
     text-transform: uppercase;
-    padding: 90px 0 40px;
 }
 .h2-services span{
+    display: block;
     font-family: "Kaushan Script", "sans-serif";
     font-weight: 400;
     font-size: 24px;
@@ -88,7 +88,7 @@ body{
     height: 3px;
     width: 60px;
     line-height: 24px;
-    margin: 35px auto 0;
+    margin: 40px auto 0;
 }
 .amazimg-list div{
     width: 75%;
@@ -131,8 +131,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding: 24px 0 0 0 ;
     margin: 0;
+    padding: 0;
 }
 .amazimg-list h3{
     margin: 0 0 15px 0;
