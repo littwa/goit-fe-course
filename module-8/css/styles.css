@@ -1,0 +1,209 @@
+
+body{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    width: 320px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.big-header{
+    height: 542px;
+    background: url(../img/bg-mobile.png) no-repeat top;
+}
+.nav-list{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.authorization{
+    display: flex;
+    justify-content: center;
+    margin: 0 ;
+    padding: 30px 50px 80px;
+}
+.authorization a{
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 21px;
+    color: #ffffff;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.name{
+    font-family: "Montserrat", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-list > h1{
+    text-align: center;
+    margin: 0;
+    padding: 20px 50px;
+}
+.under-header h2{
+    width: 320px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto 10px;
+}
+.under-header p{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+    /* width: 230px; */
+    text-align: center;
+    margin: 0 auto 40px;
+    padding: 0 48px;
+}
+.under-header button{
+    display: block;
+    width: 222px;
+    height: 40px;
+    background: #ff4e50;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: 0.2s;
+}
+.partners{
+    padding-bottom: 40px;
+}
+.partners > p{
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    padding: 70px  20px;
+    margin: 0;
+}
+.partners ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.partners li{
+    text-align: center;
+    width: 320px;
+}
+.partners li:nth-of-type(1){
+    background: url(../img/1-1.png) no-repeat center;
+    background-position-y: 0;
+}
+.partners li:nth-of-type(2){
+    background: url(../img/2-2.png) no-repeat center;
+    background-position-y: 0;
+}
+.partners li:nth-of-type(3){
+    background: url(../img/3-3.png) no-repeat center;
+    background-position-y: 0;
+}
+.partners li:nth-of-type(4){
+    background: url(../img/4-4.png) no-repeat center;
+    background-position-y: 0;
+}
+.partners h3{
+    padding-top: 140px;
+    margin: 0;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+h3 + p{
+    box-sizing: border-box;
+    padding: 25px 60px 15px;
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #666666;
+}
+.partners button{
+    display: block;
+    width: 280px;
+    height: 40px;
+    background: #ffffff;
+    padding: 0;
+    border: #ff4e50 solid 1px;
+    border-radius: 20px;
+    margin: 0 auto;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff4e50;
+    transition: 0.2s ;
+}
+.authorization a:hover{
+    border: 2px solid #ffffff;
+    border-radius: 21px;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05 , 1.05);
+}
+@media (min-width: 768px){
+    .big-header{
+        background: url(../img/bg-tablet.png) no-repeat top;
+    }
+    .nav-list{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .wrapper{
+        width: 768px;
+    }
+    .under-header h2{
+        font-size: 52px;
+        width: 550px;
+        margin-bottom: 30px;
+
+    }
+    .under-header p{
+        font-size: 24px;
+
+    }
+}
+@media (min-width: 1200px){
+    .wrapper{
+        width: 1200px;
+    }
+    .big-header{
+        background: url(../img/bg-desktop.png) no-repeat top;
+    }
+    .partners li{
+        text-align: center;
+        width: 300px;
+    }
+    .nav-list{
+        justify-content: space-around;
+
+    }
+    .nav-list > h1{
+        padding-left: 0;
+        padding-right: 150px;
+    }
+    .authorization{
+        padding-right: 0;
+        padding-left: 150px;
+    }
+}
