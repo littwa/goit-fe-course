@@ -97,7 +97,7 @@ a{
 .partners ul{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 .partners li{
