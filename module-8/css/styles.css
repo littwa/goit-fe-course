@@ -20,12 +20,12 @@ a{
 .nav-list{
     display: flex;
     flex-direction: column-reverse;
+    padding-top: 20px;
 }
 .authorization{
     display: flex;
     justify-content: center;
-    margin: 0 ;
-    padding: 30px 50px 80px;
+    margin-bottom: 100px;
 }
 .authorization a{
     padding: 10px 15px;
@@ -45,8 +45,7 @@ a{
 }
 .nav-list > h1{
     text-align: center;
-    margin: 0;
-    padding: 20px 50px;
+    margin: 0 0 30px;
 }
 .under-header h2{
     width: 320px;
@@ -91,10 +90,11 @@ a{
     font-weight: bold;
     color: #333333;
     text-align: center;
-    padding: 70px  20px;
+    padding: 70px 0 20px;
     margin: 0;
 }
 .partners ul{
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -102,36 +102,22 @@ a{
 }
 .partners li{
     text-align: center;
-    width: 320px;
-}
-.partners li:nth-of-type(1){
-    background: url(../img/1-1.png) no-repeat center;
-    background-position-y: 0;
-}
-.partners li:nth-of-type(2){
-    background: url(../img/2-2.png) no-repeat center;
-    background-position-y: 0;
-}
-.partners li:nth-of-type(3){
-    background: url(../img/3-3.png) no-repeat center;
-    background-position-y: 0;
-}
-.partners li:nth-of-type(4){
-    background: url(../img/4-4.png) no-repeat center;
-    background-position-y: 0;
+    width: 235px;
+    padding-bottom: 30px;
 }
 .partners h3{
-    padding-top: 140px;
-    margin: 0;
+    margin: 0 0 15px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 14px;
+    line-height: 18px;
     font-weight: bold;
     color: #333333;
 }
 h3 + p{
-    box-sizing: border-box;
-    padding: 25px 60px 15px;
-    margin: 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 300;
     font-size: 14px;
@@ -161,31 +147,48 @@ button:hover{
     transform: scale(1.05 , 1.05);
 }
 @media (min-width: 768px){
+    .wrapper{
+        width: 748px;
+    }
     .big-header{
+        height: 700px;
         background: url(../img/bg-tablet.png) no-repeat top;
     }
     .nav-list{
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
+        width: 640px;
+        margin: 0 auto;
     }
-    .wrapper{
-        width: 768px;
+    .authorization{
+        margin-bottom: 160px;
     }
     .under-header h2{
         font-size: 52px;
         width: 550px;
         margin-bottom: 30px;
-
     }
     .under-header p{
         font-size: 24px;
-
+    }
+    .partners li{
+        width: 250px;
+        padding-bottom: 30px;
+    }
+    .partners button{
+        width: 190px;
+    }
+    .partners li:nth-of-type(1){
+        order: -2;
+    }
+    .partners li:nth-of-type(3){
+        order: -1;
     }
 }
-@media (min-width: 1200px){
+@media (min-width: 960px){
     .wrapper{
-        width: 1200px;
+        width: 940px;
     }
     .big-header{
         background: url(../img/bg-desktop.png) no-repeat top;
@@ -195,15 +198,12 @@ button:hover{
         width: 300px;
     }
     .nav-list{
-        justify-content: space-around;
-
+        justify-content: space-between;
+        width: auto;
     }
-    .nav-list > h1{
-        padding-left: 0;
-        padding-right: 150px;
-    }
-    .authorization{
-        padding-right: 0;
-        padding-left: 150px;
+    .partners li{
+        width: 235px;
     }
 }
+
+
