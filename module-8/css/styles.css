@@ -61,7 +61,6 @@ a{
     font-weight: 300;
     font-size: 18px;
     color: #ffffff;
-    /* width: 230px; */
     text-align: center;
     margin: 0 auto 40px;
     padding: 0 48px;
@@ -84,6 +83,34 @@ a{
 .partners{
     padding-bottom: 40px;
 }
+.photo{
+    margin: 0 auto;
+    width: 121px;
+    height: 121px;
+    position: relative;
+}
+.partners .photo::after{
+    position: absolute;
+    top: 85px;
+    right: -4px;
+}
+.partners li:nth-child(1) .photo::after{
+    content: url(../img/1-tv.png);
+}
+.partners li:nth-child(2) .photo::after{
+    content: url(../img/2-butyl.png);
+}
+.partners li:nth-child(3) .photo::after{
+    content: url(../img/3-coffe.png);
+}
+.partners li:nth-child(4) .photo::after{
+    content: url(../img/4-air.png);
+}
+.partners li{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
 .partners > p{
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 22px;
@@ -99,11 +126,6 @@ a{
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-}
-.partners li{
-    text-align: center;
-    width: 235px;
-    padding-bottom: 30px;
 }
 .partners h3{
     margin: 0 0 15px;
@@ -173,7 +195,7 @@ button:hover{
         font-size: 24px;
     }
     .partners li{
-        width: 250px;
+        width: 34%;
         padding-bottom: 30px;
     }
     .partners button{
@@ -195,7 +217,7 @@ button:hover{
     }
     .partners li{
         text-align: center;
-        width: 300px;
+        width: 25%;
     }
     .nav-list{
         justify-content: space-between;
