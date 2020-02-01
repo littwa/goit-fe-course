@@ -181,7 +181,6 @@ button:hover{
 @media (min-width: 768px){
     .header-nav{
         flex-direction: row;
-
         margin: 0 auto 130px;
     }
     .wrapper{
@@ -208,9 +207,9 @@ button:hover{
     .partners .item:nth-of-type(3){
         order: -1;
     }
-    /* .authorization{
+    .authorization{
         justify-content: flex-end;
-    } */
+    }
 }
 @media (min-width: 992px){
     .wrapper{
