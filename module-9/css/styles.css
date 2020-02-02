@@ -19,6 +19,7 @@ a{
 .big-header{
     height: 542px;
     background: url(../img/bg-mobile.png) no-repeat top;
+    background-size: cover;
 }
 .authorization{
     display: flex;
