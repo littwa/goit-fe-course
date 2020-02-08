@@ -83,8 +83,6 @@ body{
     text-transform: uppercase;
 }
 .big-header__title::before
-
-
 {
     content: "Creative Template";
     display: block;
@@ -337,5 +335,4 @@ body{
     height: 1000px;
     background: linear-gradient(rgb(243, 129, 129, .9), rgb(252, 227, 138, .9)), url(../img/bg@2x.jpg) no-repeat center top;
     }
-
 }
