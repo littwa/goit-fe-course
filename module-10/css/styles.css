@@ -148,6 +148,7 @@ body{
     min-width: 32px;
     flex-basis: 32px;
     padding: 0 20px;
+    fill: #95e1d3;
 }
 .amazimg-list__link{
     text-decoration: none;
@@ -185,6 +186,9 @@ body{
     font-size: 15px;
     color: #333333;
     line-height: 24px;
+}
+.amazimg-list__item:hover .amazimg-list__icon {
+    fill: #f38181;
 }
 .team__list{
     display: flex;
@@ -280,7 +284,7 @@ body{
     width: 380px;
     height: 470px;
 }
-.team__list>li:hover{
+.item-team__container:hover{
     cursor: pointer;
 }
 .footer{
