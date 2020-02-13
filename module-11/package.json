@@ -1,5 +1,5 @@
 {
-  "name": "gulp-starter-kit",
+  "name": "home-work-11",
   "version": "1.2.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://littwa.github.io/goit-fe-course",
+  "homepage": "https://littwa.github.io/goit-fe-course/module-11",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/littwa/goit-fe-course"
