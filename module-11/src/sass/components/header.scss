@@ -1,0 +1,136 @@
+.big-header__header-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 25px;
+  margin-bottom: 150px;
+}
+
+.header-list__navigation{
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  width: 490px;   
+}
+
+.navigation__container{
+  position: relative;
+  cursor: pointer;   
+}
+
+.navigation__link{
+  @extend %link;
+  color: $color-white;
+  font-family: $font-montserrat;
+  line-height: 14px;
+  font-weight: 500;
+  transition: 0.2s linear;
+
+  &::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    display: block;
+    margin: 12px auto;
+    position: absolute;
+    transition: 0.2s linear;
+  }
+
+  &:hover{
+    color: $color-oliv;
+
+    &.navigation__link::after{
+      background: $color-oliv; 
+    } 
+  }
+}
+
+.logo{
+  @extend %link;
+  color: $color-white;
+  font-family: $font-montserrat;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+
+  &::after{
+    content: "";
+    width: 90px;
+    height: 7px;
+    display: block;
+    margin: 12px auto;
+    position: absolute;
+    transition: 0.2s linear;
+  }
+
+  &:hover{
+    color: $color-oliv;
+
+    &.logo::after{
+      background: $color-oliv;
+    }  
+  }
+}
+
+.navigation__link--cart-search{
+  fill: $color-white;
+
+  &:hover{
+    fill: $color-oliv;
+  }
+}
+
+.big-header{
+  height: 1000px;
+  background: linear-gradient(rgba($color-coral, 0.9), rgba($color-oliv, 0.9)), url(../images/bg.jpg) no-repeat center top;
+  
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background: linear-gradient(rgba($color-coral, 0.9), rgba($color-oliv, 0.9)), url(../images/bg@2x.jpg) no-repeat center top;
+  }
+
+  &__title{
+    display: block;
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto 120px;
+    font-family: $font-montserrat;
+    font-weight: bold;
+    font-size: 150px;
+    color: #fff;
+    text-transform: uppercase;
+  
+    &::before {
+      content: "Creative Template";
+      display: block;
+      font-family: $font-kaushan;
+      font-weight: 400;
+      font-size: 72px;
+      line-height: 100px;
+      text-transform: none;
+    }
+  }
+
+  &__btn{
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    background: rgba($color-black, 0);
+    color: #fff;
+    font-family: $font-montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    
+    &:hover{
+      border: 3px solid $color-oliv;
+      color: $color-oliv;
+      cursor: pointer;
+    }
+  }
+}

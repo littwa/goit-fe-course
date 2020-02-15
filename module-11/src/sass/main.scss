@@ -1,7 +1,17 @@
 /*
- * Все паршалы импортировать в этот файл
- */
+* Все паршалы импортировать в этот файл
+*/
 
-@import 'normalize.scss';
-@import 'base.scss';
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/placeholder';
+@import 'normalize';
+@import 'base';
+@import 'fonts';
 
+/* Components */
+
+@import 'components/header';
+@import 'components/services';
+@import 'components/team';
+@import 'components/footer';

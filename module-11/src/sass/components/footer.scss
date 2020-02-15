@@ -1,0 +1,54 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  border-top: $color-font solid 1px;
+
+  &__text{
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 14px;
+    color: #333333;
+  }
+
+  &__text--by{
+    color: $color-coral;
+  }
+
+  &__search{
+    display: flex;
+    padding: 0;
+    border: $color-font solid 1px;
+  }
+}
+
+.submit-btn{
+  width: 150px;
+  height: 40px;
+  background: $color-aqa;
+  color: $color-white;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &:active{
+    background: $color-coral;
+  }
+}
+
+.form-searh__input-text{
+  width: 230px;
+  height: 40px;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: lighter;
+  font-style: italic;
+  border: none;
+}

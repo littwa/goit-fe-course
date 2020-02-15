@@ -7,9 +7,11 @@
     "start": "cross-env PORT=1234 gulp start --development ",
     "build": "gulp build --production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "svg-sprite": "gulp svg-sprite",
+    "images": "gulp images"
   },
-  "homepage": "https://littwa.github.io/goit-fe-course/module-11",
+  "homepage": "https://littwa.github.io/goit-fe-course",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/littwa/goit-fe-course"
@@ -45,6 +47,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.2",
     "require-dir": "^1.2.0",
     "usedcss": "^1.0.7"
